@@ -16,36 +16,35 @@ jobs:
     name: Build and Deploy Job
 
     steps:
-      # 1. Checar o código
       - uses: actions/checkout@v3
 
-      # 2. Configurar Node.js 20.x (necessário para Vite 7)
-      - name: Setup Node.js
+      # Configurar Node 20
+      - name: Setup Node.js 20
         uses: actions/setup-node@v3
         with:
           node-version: '20.x'
 
-      # 3. Instalar dependências do frontend
-      - name: Install dependencies
+      # Instalar dependências do frontend
+      - name: Install frontend dependencies
         working-directory: ./hotel-solicitacoes-frontend
         run: npm install
 
-      # 4. Build do frontend
+      # Build do frontend
       - name: Build frontend
         working-directory: ./hotel-solicitacoes-frontend
         run: npm run build
 
-      # 5. Deploy no Azure Static Web Apps
+      # Deploy para Azure Static Web Apps
       - name: Deploy to Azure Static Web Apps
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_WAVE_0F8F1371E }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "hotel-solicitacoes-frontend"  # pasta do frontend
-          api_location: ""                             # sem backend no Static Web Apps
-          output_location: "hotel-solicitacoes-frontend/dist" # pasta build do Vite
-
+          app_location: "hotel-solicitacoes-frontend"
+          api_location: ""
+          output_location: "dist" # agora é relativo a app_location
+          
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
