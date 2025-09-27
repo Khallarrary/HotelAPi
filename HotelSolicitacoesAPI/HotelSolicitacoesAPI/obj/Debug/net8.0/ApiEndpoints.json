@@ -1,5 +1,37 @@
 [
   {
+    "ContainingType": "HotelSolicitacoesAPI.Controllers.AuthController",
+    "Method": "LoginHospede",
+    "RelativePath": "api/Auth/hospede",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HotelSolicitacoesAPI.DTO.HospedeLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelSolicitacoesAPI.Controllers.AuthController",
+    "Method": "LoginRecepcionista",
+    "RelativePath": "api/Auth/recepcionista",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "HotelSolicitacoesAPI.DTO.RecepcionistaLoginDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "HotelSolicitacoesAPI.Controllers.SolicitacoesController",
     "Method": "GetSolicitacoes",
     "RelativePath": "api/Solicitacoes",
@@ -109,22 +141,60 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Program\u002B\u003C\u003Ec__DisplayClass0_0",
-    "Method": "\u003C\u003CMain\u003E$\u003Eb__2",
-    "RelativePath": "weatherforecast",
-    "HttpMethod": "GET",
-    "IsController": false,
+    "ContainingType": "HotelSolicitacoesAPI.Controllers.SolicitacoesController",
+    "Method": "AtualizarStatus",
+    "RelativePath": "api/Solicitacoes/{id}/status",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "novoStatus",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelSolicitacoesAPI.Controllers.SolicitacoesController",
+    "Method": "GerarRelatorioEZerar",
+    "RelativePath": "api/Solicitacoes/gerar-relatorio-e-zerar",
+    "HttpMethod": "POST",
+    "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "HotelSolicitacoesAPI.Controllers.SolicitacoesController",
+    "Method": "GetMinhasSolicitacoes",
+    "RelativePath": "api/Solicitacoes/minhas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "numeroApartamento",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
     "ReturnTypes": [
       {
-        "Type": "WeatherForecast[]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[HotelSolicitacoesAPI.DTO.SolicitacaoDTO, HotelSolicitacoesAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
-          "application/json"
+          "text/plain",
+          "application/json",
+          "text/json"
         ],
         "StatusCode": 200
       }
-    ],
-    "EndpointName": "GetWeatherForecast"
+    ]
   }
 ]

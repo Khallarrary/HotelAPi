@@ -1,16 +1,13 @@
+@import "tailwindcss";
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: rgba(250, 178, 44, 0.973); /* texto escuro */
+  background-color: #f9fafb; /* fundo claro, equivalente bg-gray-50 */
 }
 
 a {
@@ -24,10 +21,11 @@ a:hover {
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
+  font-family: inherit;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -42,13 +40,10 @@ button {
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
-  background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
 }
-button:hover {
-  border-color: #646cff;
-}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
@@ -66,3 +61,52 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.solicitacoes-container {
+  max-width: 600px; /* centraliza e limita largura em mobile */
+  margin: 2rem auto; /* centraliza horizontalmente e dá espaço vertical */
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.solicitacoes-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem; /* distância do botão */
+}
+
+.solicitacoes-container th,
+.solicitacoes-container td {
+  padding: 0.75rem 1rem; /* espaçamento interno */
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb; /* cinza claro */
+}
+
+.solicitacoes-container th {
+  background-color: #f9fafb;
+  font-weight: 600;
+}
+
+.solicitacoes-container tr:hover {
+  background-color: #f1f5f9; /* efeito hover */
+}
+
+.solicitacoes-container button {
+  display: block;
+  margin: 0 auto; /* centraliza botão */
+  margin-bottom: 1rem; /* espaço da tabela */
+  padding: 0.6em 1.2em;
+  background-color: #c79221;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.solicitacoes-container button:hover {
+  background-color: #7c5c15;
+}
+
