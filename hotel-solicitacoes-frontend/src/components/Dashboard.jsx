@@ -11,6 +11,7 @@ export default function Dashboard() {
   const apiUrl = import.meta.env.VITE_API_URL;
 
   useEffect(() => {
+    // Conexão com SignalR
     const connection = new signalR.HubConnectionBuilder()
       .withUrl(`${apiUrl}/solicitacoesHub`)
       .withAutomaticReconnect()
@@ -35,6 +36,7 @@ export default function Dashboard() {
       setSolicitacoes((prev) => prev.filter((s) => s.id !== id));
     });
 
+    // Busca inicial de todas as solicitações
     fetch(`${apiUrl}/api/Solicitacoes`)
       .then((res) => res.json())
       .then((data) => setSolicitacoes(data))
@@ -45,14 +47,11 @@ export default function Dashboard() {
 
   const atualizarStatus = async (id, status) => {
     try {
-      const response = await fetch(
-        `${apiUrl}/api/Solicitacoes/${id}/status`,
-        {
-          method: "PUT",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(status),
-        }
-      );
+      const response = await fetch(`${apiUrl}/api/Solicitacoes/${id}/status`, {
+        method: "PUT",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(status),
+      });
       if (!response.ok) throw new Error("Erro ao atualizar status");
     } catch (err) {
       console.error(err);
