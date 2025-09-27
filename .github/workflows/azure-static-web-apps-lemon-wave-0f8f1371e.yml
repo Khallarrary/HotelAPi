@@ -14,35 +14,33 @@ jobs:
     if: github.event_name == 'push' || (github.event_name == 'pull_request' && github.event.action != 'closed')
     runs-on: ubuntu-latest
     name: Build and Deploy Job
-
     steps:
-      # 1. Pegar o código
+      # Fazer checkout do código
       - uses: actions/checkout@v3
         with:
           submodules: true
           lfs: false
 
-      # 2. Instalar dependências do frontendz
-      - name: Install dependencies
-        run: npm install
-        working-directory: ./hotel-solicitacoes-frontend
+      # Instalar Node.js (usado pelo Oryx)
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
 
-      # 3. Build do frontend
-      - name: Build frontend
-        run: npm run build
-        working-directory: ./hotel-solicitacoes-frontend
-
-      # 4. Deploy para o Azure Static Web Apps
-      - name: Deploy to Azure Static Web Apps
+      # Build e deploy
+      - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_LEMON_WAVE_0F8F1371E }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # para integração com PR
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
-          app_location: "hotel-solicitacoes-frontend"      # caminho do frontend
-          api_location: ""                                 # sem backend no Static Web Apps
+          app_location: "hotel-solicitacoes-frontend"       # pasta do frontend
+          api_location: ""                                  # sem API integrada
           output_location: "hotel-solicitacoes-frontend/dist"  # pasta gerada pelo build do Vite
+          #### Variáveis de ambiente do frontend
+          env:
+            VITE_API_URL: "https://hotel-api.azurewebsites.net"  # substitua pelo seu backend real
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
