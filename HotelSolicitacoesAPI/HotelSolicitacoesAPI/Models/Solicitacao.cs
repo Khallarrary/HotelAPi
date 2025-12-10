@@ -7,5 +7,6 @@
         public string TipoSolicitacao { get; set; }
         public string Status { get; set; }
         public DateTime DataSolicitacao { get; set; }
+        public string Descricao { get; set; }   
     }
 }

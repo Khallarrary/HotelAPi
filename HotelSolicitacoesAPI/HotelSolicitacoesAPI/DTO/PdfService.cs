@@ -22,7 +22,7 @@ namespace HotelSolicitacoesAPI.DTO
 
             // Página em retrato (vertical) com margens mínimas
             var document = new Document(pdf, PageSize.A4);
-            document.SetMargins(5, 5, 5, 5); // Margens ainda menores para maximizar espaço
+            document.SetMargins(5, 5, 5, 5);
 
             // Fonte em negrito
             PdfFont boldFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
@@ -36,18 +36,20 @@ namespace HotelSolicitacoesAPI.DTO
             document.Add(new Paragraph($"Data: {DateTime.Now:dd/MM/yyyy HH:mm}")
                 .SetTextAlignment(TextAlignment.CENTER));
 
-            // Tabela com 4 colunas para ocupar toda a largura
-            var table = new Table(UnitValue.CreatePercentArray(new float[] { 25, 25, 25, 25 })) // Proporções iguais de 25% cada
+            document.Add(new Paragraph("\n"));
+
+            // Tabela com 5 colunas (Quarto, Tipo, Status, Descrição, Hora)
+            var table = new Table(UnitValue.CreatePercentArray(new float[] { 15, 20, 15, 35, 15 }))
                 .SetWidth(UnitValue.CreatePercentValue(100))
                 .SetFixedLayout();
 
             // Cabeçalho
-            string[] headers = { "Quarto", "Tipo", "Status", "Hora" };
+            string[] headers = { "Quarto", "Tipo", "Status", "Descrição", "Hora" };
             foreach (var h in headers)
             {
                 table.AddHeaderCell(new Cell()
                     .Add(new Paragraph(h).SetFont(boldFont))
-                    .SetBackgroundColor(iText.Kernel.Colors.ColorConstants.GRAY) // Cor mais escura para destaque
+                    .SetBackgroundColor(iText.Kernel.Colors.ColorConstants.GRAY)
                     .SetTextAlignment(TextAlignment.CENTER));
             }
 
@@ -61,6 +63,7 @@ namespace HotelSolicitacoesAPI.DTO
                 table.AddCell(new Cell().Add(new Paragraph(s.Quarto.ToString())).SetTextAlignment(TextAlignment.CENTER).SetBackgroundColor(bgColor));
                 table.AddCell(new Cell().Add(new Paragraph(s.TipoSolicitacao ?? "N/A")).SetTextAlignment(TextAlignment.CENTER).SetBackgroundColor(bgColor));
                 table.AddCell(new Cell().Add(new Paragraph(s.Status ?? "N/A")).SetTextAlignment(TextAlignment.CENTER).SetBackgroundColor(bgColor));
+                table.AddCell(new Cell().Add(new Paragraph(s.Descricao ?? "N/A")).SetTextAlignment(TextAlignment.LEFT).SetBackgroundColor(bgColor));
                 table.AddCell(new Cell().Add(new Paragraph(s.DataSolicitacao != null ? s.DataSolicitacao.ToString("HH:mm:ss") : "N/A")).SetTextAlignment(TextAlignment.CENTER).SetBackgroundColor(bgColor));
             }
 

@@ -10,5 +10,6 @@
 
         // Apenas hora:minuto:segundo
         public string HoraSolicitacao { get; set; }
+        public string  Descricao { get; set; }
     }
 }

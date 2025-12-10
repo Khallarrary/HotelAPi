@@ -163,8 +163,8 @@
   },
   {
     "ContainingType": "HotelSolicitacoesAPI.Controllers.SolicitacoesController",
-    "Method": "GerarRelatorioEZerar",
-    "RelativePath": "api/Solicitacoes/gerar-relatorio-e-zerar",
+    "Method": "GerarRelatorio",
+    "RelativePath": "api/Solicitacoes/gerar-relatorio",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

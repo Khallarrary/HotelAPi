@@ -14,6 +14,7 @@ export default function Solicitacoes() {
   const role = localStorage.getItem("role");
   const apiUrl = import.meta.env.VITE_API_URL;
 
+  // 🔹 Pega parâmetros do hóspede (quando logado por apto e sobrenome)
   const params = new URLSearchParams(location.search);
   const hospedeApto = params.get("apto");
   const hospedeSobrenome = params.get("sobrenome");
@@ -24,14 +25,17 @@ export default function Solicitacoes() {
       return;
     }
 
-    // SignalR
+    // 1 - Conecta no SignalR
     const connection = new signalR.HubConnectionBuilder()
       .withUrl(`${apiUrl}/solicitacoesHub`)
       .withAutomaticReconnect()
       .build();
 
-    connection.start().then(() => console.log("✅ Conectado ao SignalR"));
+    connection.start().then(() => {
+      console.log("✅ Conectado ao SignalR");
+    });
 
+    // 2 - Eventos do servidor
     connection.on("NovaSolicitacao", (nova) => {
       if (!hospedeApto || nova.quarto == hospedeApto) {
         setSolicitacoes((prev) => [...prev, nova]);
@@ -50,45 +54,42 @@ export default function Solicitacoes() {
       setSolicitacoes((prev) => prev.filter((s) => s.id !== id));
     });
 
-    // Busca inicial
-    const url = hospedeApto
-      ? `${apiUrl}/api/Solicitacoes/minhas?numeroApartamento=${hospedeApto}`
-      : `${apiUrl}/api/Solicitacoes`;
-
-    fetch(url)
+    // 3 - Busca inicial
+    fetch(`${apiUrl}/api/Solicitacoes/`)
       .then((res) => res.json())
       .then((data) => {
         if (hospedeApto && hospedeSobrenome) {
-          const filtradas = data.filter(
-            (s) =>
-              s.quarto == hospedeApto &&
-              s.sobrenome?.toLowerCase() === hospedeSobrenome.toLowerCase()
+  const filtradas = data.filter(
+    (s) => s.quarto == hospedeApto && s.sobrenome.toLowerCase() === hospedeSobrenome.toLowerCase()
           );
           setSolicitacoes(filtradas);
         } else {
           setSolicitacoes(data);
         }
-      })
-      .catch((err) => console.error(err));
+      });
 
-    return () => connection.stop();
-  }, [hospedeApto, hospedeSobrenome, role, navigate]);
+    return () => {
+      connection.stop();
+    };
+  }, [hospedeApto, role, navigate]);
 
+  // 🔹 Criar nova solicitação
   const adicionarSolicitacao = async () => {
     try {
       const novaSolicitacao = {
-        quarto: hospedeApto || Number(novoQuarto),
+        quarto: hospedeApto || novoQuarto,
         tipoSolicitacao: novoTipo,
         status: hospedeApto ? "Pendente" : novoStatus,
         dataSolicitacao: new Date().toISOString(),
       };
 
-      await fetch(`${apiUrl}/api/Solicitacoes`, {
+      await fetch(`${apiUrl}/api/Solicitacoes/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(novaSolicitacao),
       });
 
+      // Não precisa chamar fetchSolicitacoes(), o SignalR vai atualizar sozinho
       setShowForm(false);
       setNovoQuarto("");
       setNovoTipo("");
@@ -108,30 +109,36 @@ export default function Solicitacoes() {
         </h2>
       </header>
 
-      <button
-        onClick={() => setShowForm(!showForm)}
-        className="py-2 px-4 rounded-lg mb-4"
-      >
-        Adicionar Solicitação
-      </button>
+      {/* Botão de adicionar*/}
+           <button
+            onClick={() => setShowForm(!showForm)}
+            className=" py-2 px-4 rounded-lg "
+          >
+            Adicionar Solicitação
+          </button> 
 
       {showForm && (
         <div className="form-container">
           <div className="inputs-row">
             {!hospedeApto && (
               <input
-                type="number"
+                type="text"
                 placeholder="Quarto"
                 value={novoQuarto}
                 onChange={(e) => setNovoQuarto(e.target.value)}
               />
             )}
-            <input
-              type="text"
-              placeholder="Tipo de Solicitação"
-              value={novoTipo}
-              onChange={(e) => setNovoTipo(e.target.value)}
-            />
+
+            <div className="flex justify-center mb-4">
+              <input
+                type="text"
+                placeholder="Tipo de Solicitação"
+                value={novoTipo}
+                onChange={(e) => setNovoTipo(e.target.value)}
+                className="border rounded-lg py-2 px-4 w-full max-w-sm text-center"
+              />
+            </div>
+
             {!hospedeApto && (
               <input
                 type="text"
@@ -143,8 +150,18 @@ export default function Solicitacoes() {
           </div>
 
           <div className="form-buttons flex gap-4 justify-center mt-4">
-            <button onClick={() => setShowForm(false)}>Cancelar</button>
-            <button onClick={adicionarSolicitacao}>Salvar</button>
+            <button
+              onClick={() => setShowForm(false)}
+              className="py-2 px-4 rounded-lg "
+            >
+              Cancelar
+            </button>
+            <button
+              onClick={adicionarSolicitacao}
+              className=" py-2 px-4 rounded-lg "
+            >
+              Salvar
+            </button>
           </div>
         </div>
       )}

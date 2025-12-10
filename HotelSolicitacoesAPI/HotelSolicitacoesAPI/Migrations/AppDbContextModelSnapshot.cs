@@ -78,6 +78,10 @@ namespace HotelSolicitacoesAPI.Migrations
                     b.Property<DateTime>("DataSolicitacao")
                         .HasColumnType("datetime2");
 
+                    b.Property<string>("Descricao")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<int>("Quarto")
                         .HasColumnType("int");
 

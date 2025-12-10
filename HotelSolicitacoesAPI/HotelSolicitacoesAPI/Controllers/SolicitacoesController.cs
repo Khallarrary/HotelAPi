@@ -11,8 +11,6 @@ using iText.Kernel.Font;
 using iText.IO.Font.Constants;
 using System.IO;
 
-
-
 namespace HotelSolicitacoesAPI.Controllers
 {
     [ApiController]
@@ -41,6 +39,7 @@ namespace HotelSolicitacoesAPI.Controllers
                     Quarto = s.Quarto,
                     TipoSolicitacao = s.TipoSolicitacao,
                     Status = s.Status,
+                    Descricao = s.Descricao,
                     HoraSolicitacao = TimeZoneInfo.ConvertTimeFromUtc(s.DataSolicitacao, fusoSP).ToString("HH:mm:ss")
                 })
                 .ToListAsync();
@@ -65,6 +64,7 @@ namespace HotelSolicitacoesAPI.Controllers
                 solicitacao.Quarto,
                 solicitacao.TipoSolicitacao,
                 solicitacao.Status,
+                solicitacao.Descricao,
                 DataSolicitacaoISO = solicitacao.DataSolicitacao.ToString("yyyy-MM-ddTHH:mm:ss"),
                 HoraSolicitacao = solicitacao.DataSolicitacao.ToString("HH:mm:ss")
             });
@@ -90,6 +90,7 @@ namespace HotelSolicitacoesAPI.Controllers
                 Quarto = solicitacao.Quarto,
                 TipoSolicitacao = solicitacao.TipoSolicitacao,
                 Status = solicitacao.Status,
+                Descricao = solicitacao.Descricao,
                 HoraSolicitacao = horaLocal.ToString("HH:mm:ss")
             };
 
@@ -112,10 +113,11 @@ namespace HotelSolicitacoesAPI.Controllers
                 Quarto = solicitacao.Quarto,
                 TipoSolicitacao = solicitacao.TipoSolicitacao,
                 Status = solicitacao.Status,
+                Descricao = solicitacao.Descricao,
                 HoraSolicitacao = horaLocal.ToString("HH:mm:ss")
             };
 
-            //Notifica todos os clientes que uma nova solicitação foi criada
+            // Notifica todos os clientes que uma nova solicitação foi criada
             await _hub.Clients.All.SendAsync("NovaSolicitacao", dto);
 
             return CreatedAtAction(nameof(GetSolicitacao), new { id = solicitacao.Id }, dto);
@@ -174,6 +176,7 @@ namespace HotelSolicitacoesAPI.Controllers
                     Quarto = s.Quarto,
                     TipoSolicitacao = s.TipoSolicitacao,
                     Status = s.Status,
+                    Descricao = s.Descricao,
                     DataSolicitacaoISO = s.DataSolicitacao.ToString("yyyy-MM-ddTHH:mm:ss"),
                     HoraSolicitacao = s.DataSolicitacao.ToString("HH:mm:ss")
                 })
@@ -182,58 +185,45 @@ namespace HotelSolicitacoesAPI.Controllers
             return Ok(solicitacoes);
         }
 
-        [HttpPost("gerar-relatorio-e-zerar")]
-        public async Task<IActionResult> GerarRelatorioEZerar()
-        {
-            var solicitacoes = await _context.Solicitacoes.ToListAsync();
+        [HttpPost("gerar-relatorio")]
+public async Task<IActionResult> GerarRelatorio()
+{
+    var solicitacoes = await _context.Solicitacoes.ToListAsync();
 
-            using var stream = new MemoryStream();
-            var writer = new PdfWriter(stream);
-            var pdf = new PdfDocument(writer);
-            var document = new Document(pdf);
+    using var stream = new MemoryStream();
+    var writer = new PdfWriter(stream);
+    var pdf = new PdfDocument(writer);
+    var document = new Document(pdf);
 
-            // Fonte em negrito
-            PdfFont boldFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
+    PdfFont boldFont = PdfFontFactory.CreateFont(StandardFonts.HELVETICA_BOLD);
 
-            // Cabeçalho
-            document.Add(new Paragraph("Relatório de Solicitações")
-                .SetFont(boldFont)
-                .SetFontSize(18));
-            document.Add(new Paragraph($"Data: {DateTime.Now:dd/MM/yyyy HH:mm}"));
-            document.Add(new Paragraph("\n"));
+    document.Add(new Paragraph("Relatório de Solicitações")
+        .SetFont(boldFont)
+        .SetFontSize(18));
+    document.Add(new Paragraph($"Data: {DateTime.Now:dd/MM/yyyy HH:mm}"));
+    document.Add(new Paragraph("\n"));
 
-            // Tabela com 4 colunas
-            var table = new Table(4);
-            table.AddHeaderCell(new Cell().Add(new Paragraph("Quarto").SetFont(boldFont)));
-            table.AddHeaderCell(new Cell().Add(new Paragraph("Tipo").SetFont(boldFont)));
-            table.AddHeaderCell(new Cell().Add(new Paragraph("Status").SetFont(boldFont)));
-            table.AddHeaderCell(new Cell().Add(new Paragraph("Hora").SetFont(boldFont)));
+    var table = new Table(5);
+    table.AddHeaderCell(new Cell().Add(new Paragraph("Quarto").SetFont(boldFont)));
+    table.AddHeaderCell(new Cell().Add(new Paragraph("Tipo").SetFont(boldFont)));
+    table.AddHeaderCell(new Cell().Add(new Paragraph("Status").SetFont(boldFont)));
+    table.AddHeaderCell(new Cell().Add(new Paragraph("Descrição").SetFont(boldFont)));
+    table.AddHeaderCell(new Cell().Add(new Paragraph("Hora").SetFont(boldFont)));
 
-            foreach (var s in solicitacoes)
-            {
-                table.AddCell(s.Quarto.ToString()); // se Quarto for int
-                table.AddCell(s.TipoSolicitacao ?? "-"); // se TipoSolicitacao puder ser null
-                table.AddCell(s.Status ?? "-");         // se Status puder ser null
-                table.AddCell(s.DataSolicitacao.ToString("HH:mm"));
-            }
+    foreach (var s in solicitacoes)
+    {
+        table.AddCell(s.Quarto.ToString());
+        table.AddCell(s.TipoSolicitacao ?? "-");
+        table.AddCell(s.Status ?? "-");
+        table.AddCell(s.Descricao ?? "-");
+        table.AddCell(s.DataSolicitacao.ToString("HH:mm"));
+    }
 
-            document.Add(table);
-            document.Close();
+    document.Add(table);
+    document.Close();
 
-            // Zera o banco
-            _context.Solicitacoes.RemoveRange(solicitacoes);
-            await _context.SaveChangesAsync();
-
-            return File(stream.ToArray(), "application/pdf", $"Relatorio_Solicitacoes_{DateTime.Now:yyyyMMddHHmm}.pdf");
-
-            try
-            {
-                // código de geração do PDF
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, ex.Message);
-            }
-        }
+    return File(stream.ToArray(), "application/pdf",
+        $"Relatorio_Solicitacoes_{DateTime.Now:yyyyMMddHHmm}.pdf");
+}
     }
 }

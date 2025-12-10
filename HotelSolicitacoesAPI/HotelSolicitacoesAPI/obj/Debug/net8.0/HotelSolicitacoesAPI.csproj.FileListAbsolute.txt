@@ -172,7 +172,6 @@ C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug\net8.0\HotelSolicitacoesAPI.pdb
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug\net8.0\HotelSolicitacoesAPI.genruntimeconfig.cache
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug\net8.0\ref\HotelSolicitacoesAPI.dll
-C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
@@ -193,3 +192,4 @@ C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
+C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

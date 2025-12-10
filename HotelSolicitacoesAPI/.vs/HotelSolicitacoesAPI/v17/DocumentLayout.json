@@ -3,56 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\controllers\\solicitacoeshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\controllers\\solicitacoeshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\controllers\\solicitacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\controllers\\solicitacoescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\solicitacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\solicitacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\models\\solicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\models\\solicitacao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\controllers\\solicitacoeshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\controllers\\solicitacoeshub.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\models\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\models\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\hospedelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\hospedelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\migrations\\20251106043705_adddescricaotosolicitacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\migrations\\20251106043705_adddescricaotosolicitacoes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\recepcionistalogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\recepcionistalogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\pdfservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\models\\hospede.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\models\\hospede.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\models\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\models\\recepcionista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\recepcionistalogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\recepcionistalogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\hospedelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\hospedelogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|c:\\users\\junior\\source\\repos\\hotelsolicitacoesapi\\hotelsolicitacoesapi\\dto\\solicitacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7342CA65-F00A-4C53-9241-75653C87C5C9}|HotelSolicitacoesAPI\\HotelSolicitacoesAPI.csproj|solutionrelative:hotelsolicitacoesapi\\dto\\solicitacaodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -74,20 +78,31 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "20251106043705_AddDescricaoToSolicitacoes.cs",
+              "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Migrations\\20251106043705_AddDescricaoToSolicitacoes.cs",
+              "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Migrations\\20251106043705_AddDescricaoToSolicitacoes.cs",
+              "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Migrations\\20251106043705_AddDescricaoToSolicitacoes.cs",
+              "RelativeToolTip": "HotelSolicitacoesAPI\\Migrations\\20251106043705_AddDescricaoToSolicitacoes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-06T04:37:05.362Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PdfService.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\DTO\\PdfService.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\DTO\\PdfService.cs",
               "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\DTO\\PdfService.cs",
               "RelativeToolTip": "HotelSolicitacoesAPI\\DTO\\PdfService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-21T05:16:38.776Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-21T05:16:38.776Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "SolicitacoesHub.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Controllers\\SolicitacoesHub.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Controllers\\SolicitacoesHub.cs",
@@ -99,7 +114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Controllers\\AuthController.cs",
@@ -111,7 +126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 3,
               "Title": "Recepcionista.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Models\\Recepcionista.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Models\\Recepcionista.cs",
@@ -123,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 9,
               "Title": "Hospede.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Models\\Hospede.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Models\\Hospede.cs",
@@ -147,7 +162,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "HospedeLoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\DTO\\HospedeLoginDTO.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\DTO\\HospedeLoginDTO.cs",
@@ -159,77 +174,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "SolicitacaoDTO.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\DTO\\SolicitacaoDTO.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\DTO\\SolicitacaoDTO.cs",
               "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\DTO\\SolicitacaoDTO.cs",
               "RelativeToolTip": "HotelSolicitacoesAPI\\DTO\\SolicitacaoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-04T04:26:17.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "SolicitacoesController.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Controllers\\SolicitacoesController.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Controllers\\SolicitacoesController.cs",
               "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Controllers\\SolicitacoesController.cs",
               "RelativeToolTip": "HotelSolicitacoesAPI\\Controllers\\SolicitacoesController.cs",
-              "ViewState": "AgIAAMwAAAAAAAAAAAAUwNQAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAwwEAAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-02T04:10:03.289Z"
+              "WhenOpened": "2025-09-02T04:10:03.289Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 4,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Data\\AppDbContext.cs",
               "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Data\\AppDbContext.cs",
               "RelativeToolTip": "HotelSolicitacoesAPI\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T02:42:59.182Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "Solicitacao.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Models\\Solicitacao.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Models\\Solicitacao.cs",
               "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Models\\Solicitacao.cs",
               "RelativeToolTip": "HotelSolicitacoesAPI\\Models\\Solicitacao.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-01T02:40:08.074Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Program.cs",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\Program.cs",
               "RelativeToolTip": "HotelSolicitacoesAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-01T02:39:20.392Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-01T02:39:20.392Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\appsettings.json",
               "RelativeDocumentMoniker": "HotelSolicitacoesAPI\\appsettings.json",
               "ToolTip": "C:\\Users\\Junior\\source\\repos\\HotelSolicitacoesAPI\\HotelSolicitacoesAPI\\appsettings.json",
               "RelativeToolTip": "HotelSolicitacoesAPI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-02T03:40:54.012Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-02T03:40:54.012Z"
             }
           ]
         }

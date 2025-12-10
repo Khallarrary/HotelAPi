@@ -342,7 +342,7 @@
         }
       }
     },
-    "/api/Solicitacoes/gerar-relatorio-e-zerar": {
+    "/api/Solicitacoes/gerar-relatorio": {
       "post": {
         "tags": [
           "Solicitacoes"
@@ -407,6 +407,10 @@
           "dataSolicitacao": {
             "type": "string",
             "format": "date-time"
+          },
+          "descricao": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -435,6 +439,10 @@
             "nullable": true
           },
           "horaSolicitacao": {
+            "type": "string",
+            "nullable": true
+          },
+          "descricao": {
             "type": "string",
             "nullable": true
           }
