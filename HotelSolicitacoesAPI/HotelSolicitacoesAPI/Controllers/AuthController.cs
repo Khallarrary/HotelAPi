@@ -1,9 +1,8 @@
 ﻿    using HotelSolicitacoesAPI.Data;
-    using HotelSolicitacoesAPI.Models;
     using HotelSolicitacoesAPI.DTO;
     using Microsoft.AspNetCore.Mvc;
     using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+    using Microsoft.EntityFrameworkCore.Metadata;
 
 
 namespace HotelSolicitacoesAPI.Controllers

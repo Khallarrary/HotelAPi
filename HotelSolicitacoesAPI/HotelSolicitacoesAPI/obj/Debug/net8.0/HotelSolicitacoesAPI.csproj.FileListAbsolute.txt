@@ -193,3 +193,4 @@ C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\BouncyCastle.Cryptography.dll
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\bin\Debug\net8.0\itext.bouncy-castle-adapter.dll
 C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Junior\source\repos\HotelSolicitacoesAPI\HotelSolicitacoesAPI\obj\Debug\net8.0\swae.build.ex.cache

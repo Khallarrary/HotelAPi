@@ -101,6 +101,11 @@ namespace HotelSolicitacoesAPI.Controllers
         [HttpPost]
         public async Task<ActionResult<SolicitacaoDTO>> PostSolicitacao(Solicitacao solicitacao)
         {
+            if (solicitacao.DataSolicitacao == default)
+            {
+                solicitacao.DataSolicitacao = DateTime.UtcNow;
+            }
+
             _context.Solicitacoes.Add(solicitacao);
             await _context.SaveChangesAsync();
 
@@ -117,7 +122,6 @@ namespace HotelSolicitacoesAPI.Controllers
                 HoraSolicitacao = horaLocal.ToString("HH:mm:ss")
             };
 
-            // Notifica todos os clientes que uma nova solicitação foi criada
             await _hub.Clients.All.SendAsync("NovaSolicitacao", dto);
 
             return CreatedAtAction(nameof(GetSolicitacao), new { id = solicitacao.Id }, dto);
