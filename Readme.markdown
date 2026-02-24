@@ -7,7 +7,8 @@ O projeto foi desenvolvido com **ASP.NET Core** no backend e **React** no fronte
 ## Demonstração
 
 ### Interface Web
-<img width="1195" height="723" alt="image" src="https://github.com/user-attachments/assets/d4f2fc27-e1a3-4882-b8db-f00792dd0c3d" />
+<img width="1431" height="889" alt="dashboard-preview" src="https://github.com/user-attachments/assets/66632ce5-e71d-4a0e-9a01-b3d659b9dd8d" />
+
 
 ---
 
